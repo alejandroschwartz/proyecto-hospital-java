@@ -59,4 +59,9 @@ public class Patient extends User {
         return super.toString() + "\n    Altura: " + getHeight() + ", Peso: " + getWeight() + ", Sangre: " + blood;
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Paciente: Posadas, Historial: Completo");
+    };
+
 }

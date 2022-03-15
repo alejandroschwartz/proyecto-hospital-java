@@ -13,6 +13,7 @@ public class Main {
             myDoctor0.addAvailableAppointment(new Date(), "4:00 pm");
         Doctor myDoctor1 = new Doctor("Delfi", "delfi@mail.com", "Clinico");
         Doctor myDoctor2 = new Doctor("Angela", "angela@mail.com", "Clinico");
+        myDoctor0.showDataUser();
         
         System.out.println();
         System.out.println(myDoctor0);

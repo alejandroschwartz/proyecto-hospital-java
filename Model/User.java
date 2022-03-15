@@ -74,5 +74,13 @@ public abstract class User {
     public String toString() {
         return "Nombre: " + name + ", Mail: " + email + ", Dirección: " + address + ", Telefono: " + phoneNumber;
     }
+    // @Override
+    // public String toString() {
+    //     return "model.User: " + name + ", Email: "+email+
+    //             "\nAddreess: "+address+". Phone: "+phoneNumber;
+    // }
+
+    public abstract void showDataUser();
+
 
 }

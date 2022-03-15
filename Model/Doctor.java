@@ -35,6 +35,16 @@ public class Doctor extends User {
     public ArrayList<AvailableAppointment> getAvailableAppointments(){
         return availableAppointments;
     }
+    
+    @Override
+    public String toString() {
+        return super.toString() + ", Especialidad: " + speciality + ", Citas disponibles: " + "\n    " + availableAppointments.toString();
+    }
+    // @Override
+    // public String toString() {
+    //     return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
+    // }
+
 
     public static class AvailableAppointment{
         private int id;
@@ -74,15 +84,16 @@ public class Doctor extends User {
 
         @Override
         public String toString() {
-            return super.toString() + ", Fec:" + date + ", Hor:" + time;
+            return super.toString() + ", Fec: " + date + ", Hor: " + time + "\n";
         }
 
     }
 
 
 
+
     @Override
-    public String toString() {
-        return super.toString() + ", Especialidad: " + speciality + ", Citas disponibles: \n" + availableAppointments;
-    }
+    public void showDataUser() {
+        System.out.println("Hospital: Posadas, Departamento: Pediatria");
+    };
 }
